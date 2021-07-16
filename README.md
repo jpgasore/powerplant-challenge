@@ -5,13 +5,18 @@ The solution is composed by tree components :
   - controllers
   - Models
   
-  The services are implemented in startup.cs and the entry of the program is program.cs
-  The configuration of the port 8888 is launchSettings.json 
+The services are implemented in startup.cs and the entry of the program is program.cs
+The configuration of the port 8888 is launchSettings.json 
   
-  For testing I lunch postman(after launching app to listen to 8888 port) at http:://localhost:8888/api/productionplan/payload
+For testing I lunch postman(after launching app to listen to 8888 port) at http:://localhost:8888/api/productionplan/payload
   
- Processing :
+Processing :
  
- I get the tree resources json files and for each one I convert it into named object.
- In this way, I can process easily the power calculation . Note : I dind't understand how to set the merit order and sum the produced power of all powerplant.
+I get the tree resources json files and for each one I convert it into named object.
+In this way, I can process easily the power calculation . Note : I dind't understand how to set the merit order and sum the produced power of all powerplant.
+ 
+After process I convert the the object to be returned into json object.
+I also used log4net to logs the run-time errors and informations messages. 
+ 
+ 
   
